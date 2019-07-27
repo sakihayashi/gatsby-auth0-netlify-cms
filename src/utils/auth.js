@@ -56,6 +56,8 @@ const tokens = {
       user = authResult.idTokenPayload
       localStorage.setItem("isLoggedIn", true)
       navigate("/account")
+      console.log('cb: ', cb());
+      
       cb()
     }
   }
