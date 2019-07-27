@@ -40,6 +40,8 @@ const tokens = {
   }
 
   const setSession = (cb = () => {}) => (err, authResult) => {
+    console.log('what is cb: ', cb);
+    
     if (err) {
       navigate("/")
       cb()
