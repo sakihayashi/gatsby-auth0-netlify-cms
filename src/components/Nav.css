@@ -189,6 +189,10 @@
   }
 }
 
+.float-right{
+  color: #ddd;
+}
+
 .site-name{
   font-size: 2rem;
   color: #fe8678;
