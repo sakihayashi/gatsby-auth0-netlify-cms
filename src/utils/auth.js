@@ -46,6 +46,8 @@ const tokens = {
     }
   
     if (authResult && authResult.accessToken && authResult.idToken) {
+      console.log('authResult: ', authResult);
+      
       let expiresAt = authResult.expiresIn * 1000 + new Date().getTime()
       tokens.accessToken = authResult.accessToken
       tokens.idToken = authResult.idToken
@@ -58,6 +60,8 @@ const tokens = {
   }
 
   export const handleAuthentication = () => {
+    console.log('this is auth handleauth: ');
+    
     if (!isBrowser) {
       return;
     }
