@@ -1,14 +1,12 @@
 
 import React from "react"
 import { handleAuthentication } from "../utils/auth"
-import navigate from 'gatsby'
 
 const PlainPage = ({ data: { page } }) => {
     console.log('handleAuthentication: ', handleAuthentication());
 
 
     handleAuthentication()
-    navigate("/")
 
     return <p>Loading...</p>
     
