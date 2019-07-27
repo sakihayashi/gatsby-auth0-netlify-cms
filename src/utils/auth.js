@@ -72,6 +72,8 @@ const tokens = {
       return;
     }
     console.log('auth line 70 auth object: ', auth);
+    console.log('setSession: ', setSession());
+    
     auth.parseHash(setSession())
   }
   
