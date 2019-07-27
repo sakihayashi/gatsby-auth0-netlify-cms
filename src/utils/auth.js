@@ -19,6 +19,7 @@ const tokens = {
     idToken: false,
     expiresAt: false,
   }
+  console.log('auth object: ', auth);
   
   let user = {}
 
@@ -63,9 +64,10 @@ const tokens = {
     console.log('this is auth handleauth: ');
     
     if (!isBrowser) {
+      console.log('auth line 67 no browser object: ');
       return;
     }
-  
+    console.log('auth line 70 auth object: ', auth);
     auth.parseHash(setSession())
   }
   
