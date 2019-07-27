@@ -75,13 +75,6 @@ const tokens = {
   }
 
   export const logout = () => {
-    console.log('auth0.WebAuth: ', auth0.WebAuth({
-      domain: process.env.AUTH0_DOMAIN,
-      clientID: process.env.AUTH0_CLIENTID,
-      redirectUri: process.env.AUTH0_CALLBACK,
-      responseType: "token id_token",
-      scope: "openid profile email",
-    }));
     
     localStorage.setItem("isLoggedIn", false)
     auth.logout()
