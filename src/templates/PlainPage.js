@@ -4,13 +4,13 @@ import { handleAuthentication } from "../utils/auth"
 
 
 const PlainPage = ({ data: { page } }) => {
+    console.log('handleAuthentication: ', handleAuthentication());
+
 
     handleAuthentication()
 
-    return (
-      
-        <p>Loading...</p>
-    )
+    return <p>Loading...</p>
+    
   }
   
   export default PlainPage

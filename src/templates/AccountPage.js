@@ -27,6 +27,7 @@ export const AccountPageTemplate = ({
 
 const AccountPage = ({ data: { page } }) => {
   if (!isAuthenticated()) {
+
     console.log('why this is working?: ', login());
     
     login()
