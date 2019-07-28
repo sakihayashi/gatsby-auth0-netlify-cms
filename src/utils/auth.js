@@ -64,7 +64,6 @@ const tokens = {
   }
 
   export const handleAuthentication = () => {
-    console.log('this is auth handleauth: ');
     
     if (!isBrowser) {
       console.log('auth line 67 no browser object: ');
