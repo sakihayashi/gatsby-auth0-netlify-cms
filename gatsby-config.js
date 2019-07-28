@@ -180,7 +180,7 @@ module.exports = {
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
         stylesPath: `${__dirname}/src/cms/admin.css`,
-        enableIdentityWidget: true
+        enableIdentityWidget: false
       }
     },
     'gatsby-plugin-netlify' // make sure to keep it last in the array

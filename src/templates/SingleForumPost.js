@@ -23,7 +23,7 @@ export const SingleForumPostTemplate = ({
       itemType="http://schema.org/BlogPosting"
     >
       <div className="container skinny">
-        <Link className="SinglePost--BackButton" to="/blog/">
+        <Link className="SinglePost--BackButton" to="/forum/">
           <ChevronLeft /> BACK
         </Link>
         <div className="SinglePost--Content relative">
@@ -81,6 +81,8 @@ export const SingleForumPostTemplate = ({
                 Next Post
               </Link>
             )}
+          
+          
           </div>
         </div>
       </div>
