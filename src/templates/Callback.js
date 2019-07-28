@@ -2,7 +2,7 @@
 import React from "react"
 import { handleAuthentication } from "../utils/auth"
 
-const PlainPage = ({ data: { page } }) => {
+const Callback = ({ data: { page } }) => {
     console.log('handleAuthentication: ', handleAuthentication());
 
 
@@ -12,7 +12,7 @@ const PlainPage = ({ data: { page } }) => {
     
   }
   
-  export default PlainPage
+  export default Callback
   
   export const pageQuery = graphql`
     query PlainPage($id: String!) {
