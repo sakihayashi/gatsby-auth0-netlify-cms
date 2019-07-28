@@ -40,7 +40,6 @@ const tokens = {
   }
 
   const setSession = (cb = () => {}) => (err, authResult) => {
-    console.log('what is cb: ', cb);
     
     if (err) {
       navigate("/")
@@ -58,7 +57,7 @@ const tokens = {
       user = authResult.idTokenPayload
       localStorage.setItem("isLoggedIn", true)
       navigate("/account")
-      console.log('cb: ', cb());
+      console.log('cb: ', cb);
       
       cb()
     }
@@ -72,9 +71,10 @@ const tokens = {
       return;
     }
     console.log('auth line 70 auth object: ', auth);
-    console.log('setSession: ', setSession());
     
     auth.parseHash(setSession())
+    console.log('auth: ', auth);
+    
   }
   
   export const getProfile = () => {
