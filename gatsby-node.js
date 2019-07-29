@@ -83,6 +83,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     ) {
       slug = `/`
     } else if (_.get(node, 'frontmatter.title')) {
+      // create a smart slug by using file path name and title
       slug = `/${_.kebabCase(parsedFilePath.dir)}/${_.kebabCase(
         node.frontmatter.title
       )}/`
@@ -107,22 +108,11 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 }
 
+
+
 // Random fix for https://github.com/gatsbyjs/gatsby/issues/5700
 module.exports.resolvableExtensions = () => ['.json']
 
-// from this point Auth0 code
-// exports.onCreatePage = async ({ page, actions }) => {
-//   const { createPage } = actions
-
-  // page.matchPath is a special key that's used for matching pages
-  // only on the client.
-  // if (page.path.match(/^\/account/)) {
-  //   page.matchPath = "/account/*"
-
-    // Update the page.
-//     createPage(page)
-//   }
-// }
 
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
   if (stage === "build-html") {
