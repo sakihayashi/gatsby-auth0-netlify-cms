@@ -1,6 +1,7 @@
 
 import React from "react"
 import { handleAuthentication } from "../utils/auth"
+import { graphql } from 'gatsby'
 
 const Callback = ({ data: { page } }) => {
     console.log('handleAuthentication: ', handleAuthentication());

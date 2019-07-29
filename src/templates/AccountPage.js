@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import { login, logout, isAuthenticated, getProfile } from "../utils/auth"
 import PageHeader from '../components/PageHeader'
 // import Content from '../components/Content'
