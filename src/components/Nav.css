@@ -189,6 +189,10 @@
   }
 }
 
+.NavLink > button{
+  background-color: #fe8678;
+}
+
 .float-right{
   color: #ddd;
 }

@@ -50,7 +50,7 @@ export class Navigation extends Component {
       if(isAuthenticated()){
         const user = getProfile()
         return (
-                <p>You are logged in as {user.name} 
+                <p>Hi, {user.nickname} 
                 <a
                 href="#logout"
                 onClick={e => {
